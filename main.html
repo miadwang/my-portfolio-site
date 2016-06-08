@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web Development and Design">
+    <meta name="author" content="Mia Wang">
+
+    <title>My Portfolio Site</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header class="top-bar">
+      <img class="logo" src="images/logo.svg" alt="Logo">
+      <div class="heading">
+        <h1 class="name">Mia Wang</h1>
+        <h2 class="description">Front-end Developer</h2>
+      </div>
+    </header>
+
+    <section class="hero-bar">
+      <picture class="hero-image">
+        <source media="(max-width: 400px)" srcset="images/hero-small-2x.jpg 2x, images/hero-small-1x.jpg">
+        <source media="(max-width: 800px)" srcset="images/hero-middle-2x.jpg 2x, images/hero-middle-1x.jpg">
+        <img class="hero-image" src="images/hero-large-2x.jpg" srcset="images/hero-large-2x.jpg 2x, images/hero-large-1x.jpg" alt="Hero Image">
+      </picture>
+    </section>
+
+    <main class="portfolio">
+      <h1 class="heading">Featured Work</h1>
+      <section class="work-collection">
+        <div class="work-item">
+          <img class="item-image" src="images/work-1-2x.jpg" srcset="images/work-1-2x.jpg 2x, images/work-1-1x.jpg" alt="File Explorer">
+          <h2 class="item-name">File Explorer</h2>
+          <p class="item-description"><a class="item-link" href="http://github.com/udacity/File_Explorer/">https://github.com/udacity/File_Explorer/</a></p>
+        </div>
+        <div class="work-item">
+          <img class="item-image" src="images/work-1-2x.jpg" srcset="images/work-1-2x.jpg 2x, images/work-1-1x.jpg" alt="File Explorer">
+          <h2 class="item-name">File Explorer</h2>
+          <p class="item-description"><a class="item-link" href="http://github.com/udacity/File_Explorer/">https://github.com/udacity/File_Explorer/</a></p>
+        </div>
+        <div class="work-item">
+          <img class="item-image" src="images/work-2-2x.jpg" srcset="images/work-2-2x.jpg 2x, images/work-2-1x.jpg" alt="Chat">
+          <h2 class="item-name">Chat</h2>
+          <p class="item-description"><a class="item-link" href="http://github.com/udacity/Chat/">https://github.com/udacity/Chat/</a></p>
+        </div>
+        <div class="work-item">
+          <img class="item-image" src="images/work-2-2x.jpg" srcset="images/work-2-2x.jpg 2x, images/work-2-1x.jpg" alt="Chat">
+          <h2 class="item-name">Chat</h2>
+          <p class="item-description"><a class="item-link" href="http://github.com/udacity/Chat/">https://github.com/udacity/Chat/</a></p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

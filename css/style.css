@@ -1,0 +1,159 @@
+body {
+	font: 300 16px/1.25 Lato, sans-serif;
+	color: #2d3c49;
+	max-width: 960px;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.top-bar {
+	display: flex;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+	border-bottom: 4px solid #7d97ad;
+	margin: 20px 0;
+}
+
+.logo {
+	margin: 10px 0 25px;
+	width: 100px;
+	height: 100px;
+}
+
+.top-bar .heading {
+	margin-left: auto;
+}
+
+.name {
+	text-transform: uppercase;
+	font-size: 4em;
+	font-weight: 100;
+	text-align: right;
+}
+
+.description {
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: right;
+}
+
+.hero-bar {
+	margin: 20px 0;
+}
+
+.hero-image {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.portfolio {
+	margin: 20px 0;
+}
+
+.portfolio .heading {
+	color: #7d97ad;
+	font-size: 2.5em;
+	font-weight: 300;
+}
+
+.work-collection {
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;;
+}
+
+.work-item {
+	margin: 20px 0;
+	width: 32%;
+}
+
+.item-image {
+	max-width: 100%;
+	border: 1px solid #7d97ad;
+}
+
+.item-name {
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: 300;
+	text-transform: uppercase;
+	padding: 5px 0;
+}
+
+.item-description {
+	text-align: center;
+}
+
+.item-link {
+	color: #2d3c49;
+	text-decoration: none;
+	overflow-x: scroll;
+}
+
+.item-link:hover {
+	text-align: center;
+	color: #7d97ad;
+	text-decoration: underline;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+	body {
+		font-size: 14px;
+	}
+
+	.top-bar, .hero-bar, .portfolio, .work-item {
+		margin: 10px 0;
+	}
+
+	.top-bar .logo {
+		margin: 10px 0 15px;
+		width: 80px;
+		height: 80px;
+	}
+
+	.portfolio .work-collection .work-item {
+		width: 48%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 399px) {
+	.top-bar, .hero-bar, .portfolio, .work-item {
+		margin: 5px 0;
+	}
+
+	.top-bar .logo {
+		margin: 5px 0 5px;
+		width: 60px;
+		height: 60px;
+	}
+
+	.top-bar .heading .name {
+		font-size: 3em;
+	}
+
+	.portfolio .work-collection .work-item {
+		width: 100%;
+	}
+}
